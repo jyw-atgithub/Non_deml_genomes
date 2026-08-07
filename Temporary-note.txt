@@ -1,0 +1,34 @@
+cat dorado-polished_Dpse_MV25_hifiasm_12-2_hap1.fa.out|grep -i "jockey" |gawk -v ORF=\t '{print $10}'|sort -h|uniq -c
+    115 BS --> suspected
+     42 BS2
+      8 BS2A_DM
+     38 BS3_DM
+      2 BS4_DM
+     46 DOC --> mostly not in chromosome ends
+     28 DOC2_DM
+     43 DOC3_DM
+     17 DOC4_DM
+      3 DOC5_DM
+      4 DOC6_DM
+     36 FW2_DM --> mostly not in chromosome ends
+     29 FW3_DM --> mostly not in chromosome ends
+     41 FW_DM --> mostly not in chromosome ends
+     14 G1_DM
+      5 G2_DM
+     11 G3_DM
+      9 G4_DM
+     55 G5A_DM
+     49 G5_DM
+     23 G6_DM
+     16 G_DM
+     34 Helena --> not in chromosome ends
+     42 HeT-A --> calonical telomeric
+     95 HeT-A-B --> calonical telomeric
+     34 Jockey
+     25 Jockey2 --> more in centromere
+     39 Jockey-5_DSec
+     18 Jockey-5_DYak
+    234 TAHRE --> calonical telomeric
+    125 TART-A --> calonical telomeric
+    129 TART-B1 --> calonical telomeric
+

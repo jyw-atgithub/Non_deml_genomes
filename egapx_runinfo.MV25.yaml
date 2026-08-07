@@ -1,0 +1,15 @@
+genome: /dfs7/jje/jenyuw/Non_melanogaster/EGAPX_annotation/dorado-polished_Dpse_MV25_hifiasm_12-2_hap1.fasta.PolcaCorrected.fa
+taxid: 7237 # Drosophila pseudoobscura
+
+# Use 2 space to indent the list
+short_reads: /dfs7/jje/jenyuw/Non_melanogaster/filtered/rnaseq/RNA_short_read_for_egapx.tsv
+long_reads:
+- - Iso-seq-1
+  - - /dfs7/jje/jenyuw/Non_melanogaster/raw/SRR11813290.fastq
+- - Iso-seq-2
+  - - /dfs7/jje/jenyuw/Non_melanogaster/raw/SRR11813291.fastq
+
+trnascan:
+  enabled: true
+cmsearch:
+  enabled: true

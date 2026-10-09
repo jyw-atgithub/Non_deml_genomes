@@ -194,7 +194,8 @@ ggplot() +
   )
 
 ###############################################################
-repeats_telo <- repeats_clean %>% filter(repeat_name == "BS3_DM" | repeat_name == "BS"| repeat_name == "TAHRE" | repeat_name == "HeT-A-B"| repeat_name == "HeT-A" | repeat_name == "TART-A" | repeat_name == "TART-B1")
+#repeat_name == "BS3_DM" | repeat_name == "BS"|
+repeats_telo <- repeats_clean %>% filter( repeat_name == "TAHRE" | repeat_name == "HeT-A-B"| repeat_name == "HeT-A" | repeat_name == "TART-A" | repeat_name == "TART-B1")
 
 num_classes <- length(unique(repeats_telo$repeat_name))
 custom_palette <- colorRampPalette(brewer.pal(min(num_classes, 12), "Paired"))(num_classes)
@@ -295,11 +296,9 @@ ggplot() +
   # Styling
   #scale_fill_manual(values = custom_palette) +
   scale_fill_muted() +
-  theme_minimal(base_size = 16) +
+  theme_minimal(base_size = 20) +
   labs(
-    title = "Comparative Repeat Landscape",
-    subtitle = "telomere",
-    x = "Genomic Position (bp)",
+    x = "Position (bp)",
     fill = "Repeat Class"
   ) +
   theme(
@@ -307,8 +306,8 @@ ggplot() +
     axis.ticks.y = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.minor.y = element_blank(),
-    strip.text.y.left = element_text(angle = 0, face = "bold", size = 12),
-    strip.text.x = element_text(face = "bold", size = 11),
+    strip.text.y.left = element_text(angle = 0, face = "bold", size = 16),
+    strip.text.x = element_text(face = "bold", size = 16),
     legend.position = "bottom",
     # Add space between facets to make individual scales clearer
     panel.spacing = unit(1, "lines") 

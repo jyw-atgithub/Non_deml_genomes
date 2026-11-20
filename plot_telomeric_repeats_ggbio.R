@@ -166,7 +166,7 @@ for (chromosome in chromosome_names) {
     output_dir,
     paste("dispersed_repeats", chromosome, "ggbio", sep = "_")
   )
-  ggplot2::ggsave(paste0(combined_stem, ".png"), combined_plot, width = 10, height = 8, dpi = 300)
+  ggplot2::ggsave(paste0(combined_stem, ".png"), combined_plot, width = 16, height = 9, dpi = 300)
 }
 
 message("Wrote individual chromosome-window plots to: ", normalizePath(output_dir))

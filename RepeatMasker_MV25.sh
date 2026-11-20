@@ -71,3 +71,13 @@ dfam-tetools-latest.sif RepeatMasker -xsmall -s -gccalc -poly \
 #--env LIBDIR=/opt/RepeatMasker/Libraries \
 #-B ${LOCAL_LIB}:/opt/RepeatMasker/Libraries \
 #-B ${WORKING_DIR}:/work \
+
+
+### RepeatMasker includes a compatible version of famdb.py. This file should generally not be installed or upgraded manually.
+### Checking the rRNA sequences in current v3.9 famdb
+
+# in interactive mode:
+#singularity run -B /dfs7/jje/jenyuw/Non_melanogaster/repeat/Libraries:/opt/RepeatMasker/Libraries dfam-tetools-latest.sif
+#cd /opt/RepeatMasker/Libraries
+#dfam-tetools-latest.sif famdb.py -i "/opt/RepeatMasker/Libraries/famdb" names Drosophila
+#famdb.py -i "/opt/RepeatMasker/Libraries/famdb" families -d 7215 --curated --class rRNA

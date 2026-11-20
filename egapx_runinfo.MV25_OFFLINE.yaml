@@ -1,0 +1,41 @@
+genome: /dfs7/jje/jenyuw/Non_melanogaster/EGAPX_annotation/Dpse_MV25_final.fasta.gz
+# /dfs7/jje/jenyuw/Non_melanogaster/primary_asm/Dpse_MV25_final.fasta.gz
+# /dfs7/jje/jenyuw/Non_melanogaster/EGAPX_annotation/dorado-polished_Dpse_MV25_hifiasm_12-2_hap1.fasta.PolcaCorrected.fa
+taxid: 7237 # Drosophila pseudoobscura
+
+# Use 2 space to indent the list
+# Fewer short reads accessions. 
+short_reads:
+  - ERR15566737
+  - ERR15566738
+  - ERR15566739
+  - ERR15566740
+  - ERR15566719
+  - ERR15566731
+  - ERR15566720
+  - ERR15566726
+  - SRR18151013
+  - SRR18151014
+  - SRR29261110
+  - SRR23592633
+  - SRR23592632
+  - SRX5995646
+  - SRR6968212
+  - SRR6968197
+  - SRR6968198
+  - SRR6968199
+  - SRR6968200
+  - SRR6968207
+  - SRR6968208
+
+
+long_reads:
+  - - Iso-seq-1
+    - - /dfs7/jje/jenyuw/Non_melanogaster/raw/SRR11813290.fastq
+  - - Iso-seq-2
+    - - /dfs7/jje/jenyuw/Non_melanogaster/raw/SRR11813291.fastq
+
+trnascan:
+  enabled: true
+cmsearch:
+  enabled: true
